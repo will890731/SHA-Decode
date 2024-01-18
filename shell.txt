@@ -1,0 +1,5 @@
+method 1
+grep -a currentPassword /opt/ofbiz/runtime/data/derby/ofbiz/seg0/*.dat
+
+method 2
+grep -arin -o -E '(\w+\W+){0,5}password(\W+\w+){0,5}'
